@@ -26,30 +26,31 @@ https://github.com/NeelAiv/RetailStoreDiscounts2.git
 in the application.properties file which is present in ``src/main/resources``
 - To check the output you can go to postman and hit POST request, and you should pass this url ``localhost:8080/api/calculate``. Change the port number with the port number you have chosen.
 - In the body select raw and you should pass body like this
-```{
+```
+  {
   "user": {
-  "name": "Jane Doe",
-  "userType": "customer",
-  "joinDate": "2020-05-10"
+    "name": "Jane Doe",
+    "userType": "customer",
+    "joinDate": "2020-05-10"
   },
   "products": [
-  {
-  "name": "Washing Machine",
-  "price": 800.0,
-  "grocery": false
-  },
-  {
-  "name": "Dishwasher",
-  "price": 600.0,
-  "grocery": false
-  },
-  {
-  "name": "Bananas",
-  "price": 30.0,
-  "grocery": true
-  }
+    {
+      "name": "Washing Machine",
+      "price": 800,
+      "grocery": false
+    },
+    {
+      "name": "Dishwasher",
+      "price": 600,
+      "grocery": false
+    },
+    {
+      "name": "Bananas",
+      "price": 30,
+      "grocery": true
+    }
   ]
-  }
+}
   ```
 - Now hit the send button and you should get output like this ``1290.0``
 - You can also check your console of the IDE. You will see output like this printed in the console
@@ -71,30 +72,31 @@ in the application.properties file which is present in ``src/main/resources``
 - Open Postman and hit the POST request with this url
 ``http://localhost:8080/api/calculate``
 - In the body select raw, and you should pass body like this
-```{
+```
+{
   "user": {
-  "name": "Jane Doe",
-  "userType": "customer",
-  "joinDate": "2020-05-10"
+    "name": "Jane Doe",
+    "userType": "customer",
+    "joinDate": "2020-05-10"
   },
   "products": [
-  {
-  "name": "Washing Machine",
-  "price": 800.0,
-  "grocery": false
-  },
-  {
-  "name": "Dishwasher",
-  "price": 600.0,
-  "grocery": false
-  },
-  {
-  "name": "Bananas",
-  "price": 30.0,
-  "grocery": true
-  }
+    {
+      "name": "Washing Machine",
+      "price": 800,
+      "grocery": false
+    },
+    {
+      "name": "Dishwasher",
+      "price": 600,
+      "grocery": false
+    },
+    {
+      "name": "Bananas",
+      "price": 30,
+      "grocery": true
+    }
   ]
-  }
+}
   ```
 - Now hit the send button and you should get output like this ``1290.0``. This output denotes net payable amount.
 

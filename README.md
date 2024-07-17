@@ -98,6 +98,13 @@ in the application.properties file which is present in ``src/main/resources``
   ```
 - Now hit the send button and you should get output like this ``1290.0``. This output denotes net payable amount.
 
+3. **Running from jar file**
+
+- Run ``mvn clean install`` command in your command prompt.
+- In the parent directory, target folder will be created, and you can see a jar file like ````RetailStoreDiscounts2-0.0.1-SNAPSHOT.jar````
+- Open the target folder directory and run the jar file with this command ``java -jar RetailStoreDiscounts2-0.0.1-SNAPSHOT.jar`` 
+- Now you can send same requests through Postman
+
 ## Running Tests
 
 - To run the test you should enter this command into your command prompt

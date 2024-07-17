@@ -116,7 +116,7 @@ in the application.properties file which is present in ``src/main/resources``
 
 This is the UML diagram which shows the relationship of classes present in the project
 
-![UML Image](src/main/resources/assets/UMLdiagram.png)
+![UML Image](src/main/resources/assets/UMLdiagrams.png)
 
 ## Project Structure
 ```
